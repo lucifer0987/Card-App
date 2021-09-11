@@ -4,6 +4,6 @@ import com.example.jm.network.RetrofitBuilder
 
 public class JokesService(private val retrofitBuilder: RetrofitBuilder) {
 
-    fun getUserService():JokesApi = retrofitBuilder.retrofit.create(JokesApi::class.java)
+    fun getJokesService():JokesApi = retrofitBuilder.retrofit.create(JokesApi::class.java)
 
 }

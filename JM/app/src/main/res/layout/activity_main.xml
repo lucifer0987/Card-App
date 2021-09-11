@@ -21,9 +21,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmNav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         app:menu="@menu/bottom_menus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        style="@style/Widget.MaterialComponents.BottomNavigationView"/>
+        app:itemIconSize="@dimen/bottom_navigation_icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

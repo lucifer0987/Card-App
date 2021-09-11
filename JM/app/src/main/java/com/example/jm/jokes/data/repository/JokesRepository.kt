@@ -4,6 +4,6 @@ import com.example.jm.jokes.data.api.JokesService
 
 class JokesRepository(private val jokesService: JokesService) {
 
-    suspend fun getUserData() = jokesService.getUserService().getUserData()
+    suspend fun getUserData() = jokesService.getJokesService().getJokes("https://icanhazdadjoke.com/")
 
 }

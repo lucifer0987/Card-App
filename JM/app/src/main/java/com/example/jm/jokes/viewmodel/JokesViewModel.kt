@@ -15,17 +15,17 @@ class JokesViewModel: ViewModel() {
 
     private val repository: JokesRepository = JokesRepository(JokesService(RetrofitBuilder))
 
-    private var _userLiveData = MutableLiveData<JokesModel>()
+    private var _jokesLiveData = MutableLiveData<JokesModel>()
 
     val jokesLiveData: LiveData<JokesModel>
-        get() = _userLiveData
+        get() = _jokesLiveData
 
 
     fun fetchData(){
         viewModelScope.launch(Dispatchers.IO) {
             val response = repository.getUserData()
             if(response.isSuccessful){
-                _userLiveData.postValue(response.body())
+                _jokesLiveData.postValue(response.body())
             }
         }
 

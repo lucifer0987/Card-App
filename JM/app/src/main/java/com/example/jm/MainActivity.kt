@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btmNav.itemIconTintList = null
+
         val navHost = supportFragmentManager.findFragmentById(binding.navHostFragment.id) as NavHostFragment
         binding.btmNav.setupWithNavController(navHost.navController)
 
