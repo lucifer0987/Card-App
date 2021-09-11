@@ -1,6 +1,7 @@
 # Jokes & Memes app
 
 This app fetches random memes and jokes from public apis and displays them and makes you laugh more.
+- I have uploaded the APK in the APK sub-directory of this directory.
 
 ## App Demo
 https://user-images.githubusercontent.com/34437499/132959487-1970d4fc-6f6a-4e1e-9d1e-741565354bbc.mp4
