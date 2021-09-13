@@ -1,15 +1,16 @@
-# Jokes & Memes app
+# Password Manager app
 
-This app fetches random memes and jokes from public apis and displays them and makes you laugh more.
-- I have uploaded the APK in the APK sub-directory of this directory.
+This app is using SAWO labs api and helps users in storing their passwords and remembring them.
 
 ## App Demo
-https://user-images.githubusercontent.com/34437499/132959487-1970d4fc-6f6a-4e1e-9d1e-741565354bbc.mp4
 
-
+https://user-images.githubusercontent.com/34437499/133135381-9d782ff4-71b5-4158-8648-3da53074a86d.mp4
 
 
 ## Screenshots
-![1](https://user-images.githubusercontent.com/34437499/132959477-1f257537-91e7-4669-b72a-c4a9bd10cf12.jpeg)
-![2](https://user-images.githubusercontent.com/34437499/132959479-ec0f1778-bf21-4bf5-8186-f32cb5c5328d.jpeg)
+![2](https://user-images.githubusercontent.com/34437499/133135486-2cd8f885-1388-4d98-9f00-2f29a28a7827.jpeg)
+![3](https://user-images.githubusercontent.com/34437499/133135490-b775a4e9-0349-4448-86c2-3711111175af.jpeg)
+![4](https://user-images.githubusercontent.com/34437499/133135492-7a8cd535-1c65-4894-853c-5601f92dba7c.jpeg)
+![1](https://user-images.githubusercontent.com/34437499/133135494-77085a87-dfde-4d3f-8f65-ba81347b6ae2.jpeg)
+
 
