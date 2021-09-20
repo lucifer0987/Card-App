@@ -19,7 +19,7 @@ class LoginCallbackActivity : AppCompatActivity() {
         lateinit var user_data:JSONObject
 
         try {
-            user_data = JSONObject(message);
+            user_data = JSONObject(message)
         }catch (e:Exception){
             Toast.makeText(this, "Some Error Occurred! Please try again.", Toast.LENGTH_LONG).show()
             val i:Intent = Intent(this, MainActivity::class.java)
@@ -28,7 +28,7 @@ class LoginCallbackActivity : AppCompatActivity() {
         }
 
         Paper.init(this)
-        val user_id:String = user_data.getString("user_id");
+        val user_id:String = user_data.getString("user_id")
         Paper.book().write("user_id", user_id)
         Toast.makeText(this, "You have been logged In!", Toast.LENGTH_LONG).show()
         val i:Intent = Intent(this, DashboardActivity::class.java)
