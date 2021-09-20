@@ -1,15 +1,16 @@
-# Jokes & Memes app
+# ToDo app
 
-This app fetches random memes and jokes from public apis and displays them and makes you laugh more.
+This app uses SQLite database to store tasks locally in user's phone. Users can add, edit/update, delete tasks
 - I have uploaded the APK in the APK sub-directory of this directory.
 
 ## App Demo
-https://user-images.githubusercontent.com/34437499/132959487-1970d4fc-6f6a-4e1e-9d1e-741565354bbc.mp4
-
+https://user-images.githubusercontent.com/34437499/134050569-217621ca-3c74-455d-87ae-7587fb7f5f74.mp4
 
 
 
 ## Screenshots
-![1](https://user-images.githubusercontent.com/34437499/132959477-1f257537-91e7-4669-b72a-c4a9bd10cf12.jpeg)
-![2](https://user-images.githubusercontent.com/34437499/132959479-ec0f1778-bf21-4bf5-8186-f32cb5c5328d.jpeg)
+![WhatsApp Image 2021-09-20 at 11 25 44 PM (1)](https://user-images.githubusercontent.com/34437499/134050816-02ee3555-a9b5-4939-b000-43b9fe09b22c.jpeg)
+![WhatsApp Image 2021-09-20 at 11 25 44 PM (2)](https://user-images.githubusercontent.com/34437499/134050819-1b678482-99eb-4de2-ae79-b2a742fab3ce.jpeg)
+![WhatsApp Image 2021-09-20 at 11 25 44 PM (3)](https://user-images.githubusercontent.com/34437499/134050821-fac434df-d286-4dae-bf0b-ef4ccce1c0a0.jpeg)
+![WhatsApp Image 2021-09-20 at 11 25 44 PM](https://user-images.githubusercontent.com/34437499/134050822-1c5419bf-faa4-4402-9e72-bf74cfda450f.jpeg)
 
