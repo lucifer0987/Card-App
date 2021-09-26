@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".Activities.CreateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/sfprobold"
+        android:text="Create Your Personal Group"
+        android:textColor="#FFFFFF"
+        android:textSize="56dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/create_group_image"
+        android:layout_above="@id/linear"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="28dp"
+        android:background="@drawable/upi_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_marginTop="28dp"
+            android:layout_width="60dp"
+            android:layout_height="4dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprobold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="Your Group Name"/>
+
+        <EditText
+            android:id="@+id/et_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:hint="Myth Guys"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textSize="32sp"
+            android:textColorHint="#CFCACA"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="4dp"
+            android:background="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprobold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="How you describe your group"/>
+
+        <EditText
+            android:id="@+id/et_group_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Bla bla bla..."
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textSize="32sp"
+            android:textColorHint="#CFCACA"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btn_create_group"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            android:layout_height="60dp"
+            android:text="Create My Group"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="32dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

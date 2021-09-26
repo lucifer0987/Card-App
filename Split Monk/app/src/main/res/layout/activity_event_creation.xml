@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EventCreationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/sfprobold"
+            android:text="SPLIT MONK"/>
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"
+            android:textColor="#DFDEDE"
+            android:fontFamily="@font/open_sans"
+            android:text="Create New Event and Start Managing Bills"/>
+
+        <EditText
+            android:id="@+id/et_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="#Event Name"
+            android:textColor="#F4F0F0"
+            android:textColorHint="#DAD8D8"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/profile_Card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/box_shadow_round"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="22sp"
+                android:textColor="#5E5C5C"
+                android:fontFamily="@font/open_sans"
+                android:text="Group Spent"/>
+
+            <EditText
+                android:id="@+id/et_event_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#Amount"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textSize="32sp"
+                android:textColorHint="#8F17C261"
+                android:textStyle="bold"
+                android:textColor="#8F17C261"/>
+
+            <TextView
+                android:id="@+id/heading4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="22sp"
+                android:textColor="#5E5C5C"
+                android:fontFamily="@font/open_sans"
+                android:text="Description"/>
+
+            <EditText
+                android:id="@+id/et_event_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#Purpose of Event"
+                android:inputType="textMultiLine"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textSize="32sp"
+                android:textColorHint="#8F919593"
+                android:textStyle="bold"
+                android:textColor="#8F919593"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/users_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_margin="24dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/users_rec"
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:textSize="18sp"
+                    android:backgroundTint="@color/light_blue"
+                    app:strokeColor="#D81313"
+                    app:strokeWidth="2dp"
+                    android:textColor="#D81313"
+                    android:fontFamily="@font/sfprobold"
+                    app:cornerRadius="24dp"
+                    android:text="Discard"/>
+
+                <Button
+                    android:id="@+id/btn_create_event"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="32dp"
+                    android:layout_height="60dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sfprobold"
+                    app:cornerRadius="24dp"
+                    android:text="Create"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

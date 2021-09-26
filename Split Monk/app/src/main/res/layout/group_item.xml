@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="28dp"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/yellow"
+    tools:context=".Activities.LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Party Hard"
+                android:textColor="@color/pink"
+                android:textSize="24sp"
+                android:fontFamily="@font/sfprobold"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/group_desc"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Party Hard adfa adsfa adsfasdf asdfa asdasdf adfa adfa adsf adsfdsf"
+                android:textColor="#2E2D2D"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans"/>
+
+            <TextView
+                android:id="@+id/group_code"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copy_invite_code"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@color/blue"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_2"
+                android:layout_marginStart="32dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@color/green"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_3"
+                android:layout_alignStart="@id/avatar_2"
+                android:layout_marginStart="32dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@color/pink"/>
+
+            <TextView
+                android:id="@+id/group_more"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/avatar_2"
+                android:layout_alignStart="@id/avatar_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2 more"
+                android:textColor="#686A69"
+                android:textSize="20sp"
+                android:fontFamily="@font/open_sans_semibold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Split Monk</string>
+    <string name="log_out"><u>Logout</u></string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="add_event"><u>Add Event</u></string>
+    <string name="copy_invite_code"><u>Copy Invite Code</u></string>
+</resources>
